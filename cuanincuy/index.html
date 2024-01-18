@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Matematik</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>KATIK</h1>
+        <h1>Kalkulator Matematik</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card">
+                <div class="content-header">
+                    <h2>Hi there, selamat datang di situs yang dapat membantu anda dalam perhitungan luas dan keliling persegi.</h2>
+                </div>
+                <div class="content-body">
+                    <div class="card">
+                        <h3>Luas Persegi</h3>
+                        <div class="keterangan">
+                            <img src="http://katik.azurewebsites.net/images/persegi.jpg" alt="Luas Persegi Image" />
+                            <div>
+                                <p>Luas persegi dihitung dengan mengalikan panjang sisi dengan lebar sisi.</p>
+                                <p>L = S x S</p>
+                                <p>Di mana s adalah panjang sisi persegi.</p>
+                            </div>
+                        </div>
+                        <form id="calculateArea">
+                            <label for="luasPersegiInput">Hitung Luas Persegi</label>
+                            <div class="container-input">
+                                <input type="number" id="luasPersegiInput" required />
+                                <button type="submit">Hitung</button>
+                                <button type="reset" id="resetLuas">Reset</button>
+                            </div>
+                        </form>
+                        <div id="resultCalculateArea"></div>
+                    </div>
+                    <div class="card">
+                        <h3>Kelilling Persegi</h3>
+                        <div class="keterangan">
+                            <img src="https://katik.azurewebsites.net/images/persegi.jpg" alt="Keliling Persegi Image" />
+                            <div>
+                                <p>Keliling persegi dihitung dengan menjumlahkan semua sisi persegi.</p>
+                                <p>K = 4 x S</p>
+                                <p>Di mana s adalah panjang sisi persegi.</p>
+                            </div>
+                        </div>
+                        <form id="calculatePerimeter">
+                            <label for="kelilingPersegiInput">Hitung Keliling Persegi</label>
+                            <div class="container-input">
+                                <input type="number" id="kelilingPersegiInput" required />
+                                <button type="submit">Hitung</button>
+                                <button type="reset" id="resetKeliling">Reset</button>
+                            </div>
+                        </form>
+                        <div id="resultCalculatePerimeter"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; 2024 <a href="https://github.com/nugrahalabib" style="color: white">Nugraha Labib Mujaddid</a>.
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
